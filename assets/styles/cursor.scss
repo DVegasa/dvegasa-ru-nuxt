@@ -1,0 +1,5 @@
+$cursor-normal: url("~/assets/cursor-normal.svg"), auto;
+
+* {
+    cursor: $cursor-normal;
+}

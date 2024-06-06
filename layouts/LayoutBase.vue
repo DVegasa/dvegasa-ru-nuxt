@@ -1,6 +1,6 @@
 <template>
   <div class="LayoutDefault">
-    LayoutBase
+    LayoutBase <b>bold</b>
 
     <slot  />
   </div>
