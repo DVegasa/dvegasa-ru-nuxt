@@ -38,6 +38,8 @@ const props = defineProps({
 
   transition: all ease-in-out 0.15s;
 
+  letter-spacing: 0;
+
   & * {
     cursor: pointer;
   }

@@ -37,7 +37,6 @@ import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
 
     .name {
       font-size: 52px;
-      font-weight: 400;
       margin-bottom: 0.06em;
 
       @include screen-tablet {
@@ -53,7 +52,7 @@ import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
       font-size: 22px;
       color: rgba(255, 255, 255, 0.75);
       font-weight: 400;
-      margin-bottom: 1.9em;
+      margin-bottom: 2.2em;
 
       @include screen-tablet {
         font-size: 20px;
@@ -74,12 +73,13 @@ import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
     flex-direction: column;
 
     .contactMe {
-      font-weight: 400;
+      font-weight: 300;
       color: rgba(255, 255, 255, 0.75);
       padding-bottom: 1.25em;
+      font-size: 14px;
 
       @include screen-tablet {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       @include screen-phone {
