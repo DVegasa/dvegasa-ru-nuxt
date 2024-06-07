@@ -2,17 +2,33 @@
   <div class="LandingProfile">
     <div class="top">
       <div class="name">Эдуард Халтурин</div>
-      <div class="subtitle">продуктовый full-stack разработчик </div>
+      <div class="subtitle">продуктовый full-stack разработчик</div>
 
-      <ui-button type="primary">Посмотреть резюме</ui-button>
+      <NuxtLink to="/xp">
+        <ui-button type="primary">Посмотреть резюме</ui-button>
+      </NuxtLink>
     </div>
 
     <div class="contacts">
       <div class="contactMe">связаться со мной</div>
       <div class="contactButtons">
-        <ui-button icon="only"><nuxt-icon name="telegram"/> </ui-button>
-        <ui-button icon="only"><nuxt-icon name="linkedin"/></ui-button>
-        <ui-button icon="only"><nuxt-icon name="github"/></ui-button>
+        <NuxtLink :to="ExternalUrls.telegram" external>
+          <ui-button icon="only">
+            <nuxt-icon name="telegram"/>
+          </ui-button>
+        </NuxtLink>
+
+        <NuxtLink :to="ExternalUrls.linkedin" external>
+          <ui-button icon="only">
+            <nuxt-icon name="linkedin"/>
+          </ui-button>
+        </NuxtLink>
+
+        <NuxtLink :to="ExternalUrls.github" external>
+          <ui-button icon="only">
+            <nuxt-icon name="github"/>
+          </ui-button>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -21,6 +37,7 @@
 
 <script setup lang="ts">
 import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
+import {ExternalUrls} from "~/modules/redirects/external-urls";
 </script>
 
 
