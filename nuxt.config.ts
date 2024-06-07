@@ -7,6 +7,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Эдуард Халтурин - fullstack разработчик',
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1, interactive-widget=resizes-content',
 
       link: [
         {
@@ -14,7 +16,7 @@ export default defineNuxtConfig({
           type: 'image/x-icon',
           href: '/favicon.png',
         }
-      ]
+      ],
     }
   },
 

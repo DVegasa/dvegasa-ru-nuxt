@@ -4,7 +4,7 @@
       <div class="name">Эдуард Халтурин</div>
       <div class="subtitle">продуктовый full-stack разработчик</div>
 
-      <NuxtLink to="/xp">
+      <NuxtLink to="/cv">
         <ui-button type="primary">Посмотреть резюме</ui-button>
       </NuxtLink>
     </div>
