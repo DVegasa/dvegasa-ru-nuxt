@@ -10,6 +10,13 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1, interactive-widget=resizes-content',
 
+      meta: [
+        {
+          name: 'description',
+          content: 'Продуктовый full-stack разработчик. Специализируюсь на Vue + PHP (Laravel)',
+        },
+      ],
+
       link: [
         {
           rel: 'icon',
