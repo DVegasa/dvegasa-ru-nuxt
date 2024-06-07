@@ -12,6 +12,12 @@ body,
 * {
     box-sizing: border-box;
     color: $color-white;
+
+    &:focus {
+        outline: 1px dashed $color-green;
+        outline-offset: 2px;
+        border: none;
+    }
 }
 
 // Убрать скроллбары
