@@ -6,6 +6,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: 'Эдуард Халтурин - fullstack разработчик',
+
       link: [
         {
           rel: 'icon',
