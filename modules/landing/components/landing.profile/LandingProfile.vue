@@ -25,42 +25,73 @@ import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
 
 
 <style scoped lang="scss">
+@import '@/assets/styles/responsive';
+
 .LandingProfile {
-  padding-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   .top {
+    text-align: left;
+
     .name {
       font-size: 52px;
       font-weight: 400;
-      margin-bottom: 5px;
+      margin-bottom: 0.06em;
+
+      @include screen-tablet {
+        font-size: 46px;
+      }
+
+      @include screen-phone {
+        font-size: 32px;
+      }
     }
 
     .subtitle {
       font-size: 22px;
       color: rgba(255, 255, 255, 0.75);
       font-weight: 400;
+      margin-bottom: 1.9em;
 
-      margin-bottom: 40px;
+      @include screen-tablet {
+        font-size: 20px;
+      }
+
+      @include screen-phone {
+        font-size: 16px;
+      }
     }
   }
 
   .contacts {
     position: absolute;
-    left: 100px;
-    bottom: 40px;
+    left: 0;
+    bottom: 2em;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
+    .contactMe {
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75);
+      padding-bottom: 1.25em;
+
+      @include screen-tablet {
+        font-size: 16px;
+      }
+
+      @include screen-phone {
+        font-size: 14px;
+      }
+    }
 
     .contactButtons {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 15px;
+      gap: 0.75em;
     }
   }
 }

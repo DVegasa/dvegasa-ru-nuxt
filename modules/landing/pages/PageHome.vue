@@ -15,7 +15,17 @@ import LandingProfile from "~/modules/landing/components/landing.profile/Landing
 
 <style lang="scss">
 @import '@/assets/styles/index.scss';
+@import '@/assets/styles/responsive';
 
 .LandingPageHome {
+  padding-left: 100px;
+
+  @include screen-tablet {
+    padding-left: 50px;
+  }
+
+  @include screen-phone {
+    padding-left: 20px;
+  }
 }
 </style>

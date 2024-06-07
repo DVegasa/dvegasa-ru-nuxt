@@ -33,7 +33,7 @@ const props = defineProps({
   cursor: pointer;
   outline: inherit;
 
-  padding: 10px 20px;
+  padding: 0.66em 1.2em;
   border-radius: 3px;
 
   transition: all ease-in-out 0.15s;
@@ -57,6 +57,14 @@ const props = defineProps({
       &:hover {
         background-color: color.scale($color-black, $lightness: 4%);
       }
+
+      @include screen-tablet {
+        font-size: 16px;
+      }
+
+      @include screen-phone {
+        font-size: 14px;
+      }
     }
 
     &primary {
@@ -69,15 +77,21 @@ const props = defineProps({
       &:hover {
         background-color: color.scale($color-green, $lightness: -15%);
       }
+
+      @include screen-tablet {
+        font-size: 16px;
+      }
+
+      @include screen-phone {
+        font-size: 14px;
+      }
     }
   }
 
 
   &._icon- {
     &only {
-      padding: 0;
-      width: 45px;
-      height: 45px;
+      padding: 0.5em 0.5em;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -85,6 +99,14 @@ const props = defineProps({
 
       &:active {
         transform: scale(0.75) !important;
+      }
+
+      @include screen-tablet {
+        font-size: 24px;
+      }
+
+      @include screen-phone {
+        font-size: 22px;
       }
     }
   }
