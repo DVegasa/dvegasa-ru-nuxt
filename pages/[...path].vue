@@ -1,12 +1,8 @@
 <template>
-<div>
-  hello, world!
-
-  <CatMeow />
-</div>
+  <pre></pre>
 </template>
 
 
 <script setup>
-
+navigateTo('/')
 </script>

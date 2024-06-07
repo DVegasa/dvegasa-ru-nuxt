@@ -1,7 +1,5 @@
 <template>
-  <div class="LayoutDefault">
-    LayoutBase <b>bold</b>
-
+  <div class="LayoutBase">
     <slot  />
   </div>
 </template>
@@ -13,7 +11,7 @@
 
 
 <style lang="scss">
-.LayoutDefault {
-
+.LayoutBase {
+  min-height: 100vh;
 }
 </style>
