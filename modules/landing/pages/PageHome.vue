@@ -18,14 +18,18 @@ import LandingProfile from "~/modules/landing/components/landing.profile/Landing
 @import '@/assets/styles/responsive';
 
 .LandingPageHome {
+  position: relative;
   padding-left: 100px;
+  padding-right: 100px;
 
   @include screen-tablet {
     padding-left: 50px;
+    padding-right: 50px;
   }
 
   @include screen-phone {
     padding-left: 20px;
+    padding-right: 20px;
   }
 }
 </style>

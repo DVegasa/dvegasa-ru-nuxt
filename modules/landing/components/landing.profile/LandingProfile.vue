@@ -51,6 +51,7 @@ import {ExternalUrls} from "~/modules/redirects/external-urls";
 
   .top {
     text-align: left;
+    width: 100%;
 
     .name {
       font-size: 52px;
