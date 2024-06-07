@@ -4,28 +4,28 @@
       <div class="name">Эдуард Халтурин</div>
       <div class="subtitle">продуктовый full-stack разработчик</div>
 
-      <NuxtLink to="/cv" aria-label="посмотреть резюме">
-        <ui-button type="primary" role="presentation" tabindex="-1">Посмотреть резюме</ui-button>
+      <NuxtLink to="/cv" aria-label="посмотреть резюме" id="link-cv">
+        <ui-button type="primary" role="none" tabindex="-1" aria-labelledby="link-cv">Посмотреть резюме</ui-button>
       </NuxtLink>
     </div>
 
     <div class="contacts">
       <div class="contactMe">связаться со мной</div>
       <div class="contactButtons">
-        <NuxtLink :to="ExternalUrls.telegram" external aria-label="связаться по telegram">
-          <ui-button icon="only" role="presentation" tabindex="-1">
+        <NuxtLink :to="ExternalUrls.telegram" external aria-label="связаться по telegram" id="btn-telegram">
+          <ui-button icon="only" role="none" tabindex="-1" aria-labelledby="btn-telegram">
             <nuxt-icon name="telegram"/>
           </ui-button>
         </NuxtLink>
 
-        <NuxtLink :to="ExternalUrls.linkedin" external aria-label="связаться по linkedin">
-          <ui-button icon="only" role="presentation" tabindex="-1">
+        <NuxtLink :to="ExternalUrls.linkedin" external aria-label="связаться по linkedin" id="btn-linkedin">
+          <ui-button icon="only" role="none" tabindex="-1" aria-labelledby="btn-linkedin">
             <nuxt-icon name="linkedin"/>
           </ui-button>
         </NuxtLink>
 
-        <NuxtLink :to="ExternalUrls.github" external aria-label="связаться по github">
-          <ui-button icon="only" role="presentation" tabindex="-1">
+        <NuxtLink :to="ExternalUrls.github" external aria-label="связаться по github" id="btn-github">
+          <ui-button icon="only" role="none" tabindex="-1" aria-labelledby="btn-github">
             <nuxt-icon name="github"/>
           </ui-button>
         </NuxtLink>
