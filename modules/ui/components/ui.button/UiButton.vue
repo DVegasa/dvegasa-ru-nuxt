@@ -1,21 +1,21 @@
 <template>
-  <button :class="['UiButton', `_type-${props.type}`]">
-    {{props.text}}
+  <button :class="['UiButton', `_type-${props.type}`, props.icon && `_icon-${props.icon}`]">
+    <slot />
   </button>
 </template>
 
 
 <script setup lang="ts">
-import {ButtonTypes} from "~/modules/ui/components/ui.button/button-types";
+import {ButtonIcon, ButtonTypes} from "~/modules/ui/components/ui.button/enums";
 
 const props = defineProps({
-  text: {
-    type: String,
-    default: '',
-  },
   type: {
-    type: ButtonTypes,
+    type: String as () => ButtonTypes,
     default: ButtonTypes.default,
+  },
+  icon: {
+    type: String as () => ButtonIcon,
+    default: null,
   }
 });
 </script>
@@ -38,24 +38,54 @@ const props = defineProps({
 
   transition: all ease-in-out 0.15s;
 
-  &_type-default {
-
+  & * {
+    cursor: pointer;
   }
 
-  &._type-primary {
-    background-color: $color-green;
-    color: $color-black;
+  &:active {
+    transform: scale(0.96) !important;
+  }
 
-    font-size: 16px;
-    font-weight: bold;
+  &._type- {
+    &default {
+      background-color: $color-black;
+      color: $color-white;
 
-    &:hover {
-      background-color: color.scale($color-green, $lightness: -15%);
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: color.scale($color-black, $lightness: 4%);
+      }
     }
 
-    &:active {
-      //transform: scale(0.98);
-      transform: translateY(2px);
+    &primary {
+      background-color: $color-green;
+      color: $color-black;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: color.scale($color-green, $lightness: -15%);
+      }
+    }
+  }
+
+
+  &._icon- {
+    &only {
+      padding: 0;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+
+      &:active {
+        transform: scale(0.75) !important;
+      }
     }
   }
 }

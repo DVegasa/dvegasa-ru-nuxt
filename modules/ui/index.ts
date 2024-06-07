@@ -5,6 +5,5 @@ export default defineNuxtModule({
         name: 'ui'
     },
     setup() {
-        const resolver = createResolver(import.meta.url);
     },
 })

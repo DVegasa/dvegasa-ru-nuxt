@@ -4,15 +4,15 @@
       <div class="name">Эдуард Халтурин</div>
       <div class="subtitle">продуктовый full-stack разработчик </div>
 
-      <ui-button text="Посмотреть резюме" type="primary" />
+      <ui-button type="primary">Посмотреть резюме</ui-button>
     </div>
 
     <div class="contacts">
       <div class="contactMe">связаться со мной</div>
       <div class="contactButtons">
-        <div>X</div>
-        <div>Y</div>
-        <div>Z</div>
+        <ui-button icon="only"><nuxt-icon name="telegram"/> </ui-button>
+        <ui-button icon="only"><nuxt-icon name="linkedin"/></ui-button>
+        <ui-button icon="only"><nuxt-icon name="github"/></ui-button>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
       color: rgba(255, 255, 255, 0.75);
       font-weight: 400;
 
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
 

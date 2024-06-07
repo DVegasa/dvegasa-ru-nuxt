@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  modules: ['nuxt-icons'],
+
   app: {
     head: {
       link: [
