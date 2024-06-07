@@ -30,6 +30,10 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap',
         }
       ],
+
+      htmlAttrs: {
+        lang: 'ru',
+      }
     }
   },
 

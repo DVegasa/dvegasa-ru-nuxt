@@ -4,28 +4,28 @@
       <div class="name">Эдуард Халтурин</div>
       <div class="subtitle">продуктовый full-stack разработчик</div>
 
-      <NuxtLink to="/cv">
-        <ui-button type="primary">Посмотреть резюме</ui-button>
+      <NuxtLink to="/cv" aria-label="посмотреть резюме">
+        <ui-button type="primary" role="presentation" tabindex="-1">Посмотреть резюме</ui-button>
       </NuxtLink>
     </div>
 
     <div class="contacts">
       <div class="contactMe">связаться со мной</div>
       <div class="contactButtons">
-        <NuxtLink :to="ExternalUrls.telegram" external>
-          <ui-button icon="only">
+        <NuxtLink :to="ExternalUrls.telegram" external aria-label="связаться по telegram">
+          <ui-button icon="only" role="presentation" tabindex="-1">
             <nuxt-icon name="telegram"/>
           </ui-button>
         </NuxtLink>
 
-        <NuxtLink :to="ExternalUrls.linkedin" external>
-          <ui-button icon="only">
+        <NuxtLink :to="ExternalUrls.linkedin" external aria-label="связаться по linkedin">
+          <ui-button icon="only" role="presentation" tabindex="-1">
             <nuxt-icon name="linkedin"/>
           </ui-button>
         </NuxtLink>
 
-        <NuxtLink :to="ExternalUrls.github" external>
-          <ui-button icon="only">
+        <NuxtLink :to="ExternalUrls.github" external aria-label="связаться по github">
+          <ui-button icon="only" role="presentation" tabindex="-1">
             <nuxt-icon name="github"/>
           </ui-button>
         </NuxtLink>
