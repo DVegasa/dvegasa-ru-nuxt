@@ -15,20 +15,23 @@ export default defineNuxtConfig({
           rel: 'icon',
           type: 'image/x-icon',
           href: '/favicon.png',
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com',
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossOrigin: '',
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap',
         }
       ],
     }
   },
 
   css: ['~/assets/styles/index.scss'],
-
-  // vite: {
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss:
-  //         additionalData: '@use "~/assets/_colors.scss" as *;'
-  //       }
-  //     }
-  //   }
-  // }
 })
