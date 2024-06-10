@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['nuxt-icons'],
+  modules: [
+      'nuxt-icons',
+      '@nuxtjs/i18n',
+  ],
 
   app: {
     head: {
@@ -45,4 +48,8 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/styles/index.scss'],
+
+  i18n: {
+    vueI18n: './modules/i18n/i18n.config.ts',
+  },
 })
