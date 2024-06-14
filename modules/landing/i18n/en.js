@@ -1,7 +1,7 @@
 export const landing_en = {
   profile: {
     name: "Ed Khalturin",
-    subtitle: "product full-stack develop",
+    subtitle: "product full-stack developer",
     cv: "Download CV",
     ariaCv: "download cv",
     contactMe: "contact me",
