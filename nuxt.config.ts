@@ -49,10 +49,4 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: './modules/i18n/i18n.config.ts',
   },
-
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
 })

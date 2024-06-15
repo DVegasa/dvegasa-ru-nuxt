@@ -1,7 +1,6 @@
 <template>
-  <pre></pre>
+  <pre />
 </template>
-
 
 <script setup>
 navigateTo('/')

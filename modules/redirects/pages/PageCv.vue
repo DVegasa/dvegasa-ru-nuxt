@@ -1,16 +1,14 @@
 <template>
-  <div class="PageCv">
-  </div>
+  <div class="PageCv" />
 </template>
 
-
 <script setup lang="ts">
-import {ExternalUrls} from "~/modules/redirects/external-urls";
+import { ExternalUrls } from '~/modules/redirects/external-urls'
+
 await navigateTo(ExternalUrls.cv, {
-  external: true
+  external: true,
 })
 </script>
-
 
 <style lang="scss">
 .PageCv {

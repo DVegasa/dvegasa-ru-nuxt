@@ -4,9 +4,9 @@
   </button>
 </template>
 
-
 <script setup lang="ts">
-import {ButtonIcon, ButtonTypes} from "~/modules/ui/components/ui.button/enums";
+import type { ButtonIcon } from '~/modules/ui/components/ui.button/enums'
+import { ButtonTypes } from '~/modules/ui/components/ui.button/enums'
 
 const props = defineProps({
   type: {
@@ -16,10 +16,9 @@ const props = defineProps({
   icon: {
     type: String as () => ButtonIcon,
     default: null,
-  }
-});
+  },
+})
 </script>
-
 
 <style scoped lang="scss">
 @use 'sass:color';
@@ -89,7 +88,6 @@ const props = defineProps({
       }
     }
   }
-
 
   &._icon- {
     &only {

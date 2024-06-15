@@ -6,12 +6,10 @@
   </div>
 </template>
 
-
 <script setup lang="ts">
-import UiAllScreen from "~/modules/ui/components/ui.AllScreen/UiAllScreen.vue";
-import LandingProfile from "~/modules/landing/components/landing.profile/LandingProfile.vue";
+import UiAllScreen from '~/modules/ui/components/ui.AllScreen/UiAllScreen.vue'
+import LandingProfile from '~/modules/landing/components/landing.profile/LandingProfile.vue'
 </script>
-
 
 <style lang="scss">
 @import '@/assets/styles/index.scss';

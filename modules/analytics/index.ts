@@ -1,9 +1,9 @@
-import {addComponentsDir, createResolver, defineNuxtModule, extendPages} from "@nuxt/kit";
+import { defineNuxtModule } from '@nuxt/kit'
 
 export default defineNuxtModule({
-    meta: {
-        name: 'analytics'
-    },
-    setup() {
-    },
+  meta: {
+    name: 'analytics',
+  },
+  setup() {
+  },
 })

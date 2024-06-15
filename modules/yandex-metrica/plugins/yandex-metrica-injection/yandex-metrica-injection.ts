@@ -17,7 +17,7 @@ const counter = `<!-- Yandex.Metrika counter -->
 <!-- /Yandex.Metrika counter -->`
 
 export default defineNitroPlugin((nitroApp) => {
-    nitroApp.hooks.hook('render:html', (html, { event }) => {
-        html.head.unshift(counter)
-    })
+  nitroApp.hooks.hook('render:html', (html) => {
+    html.head.unshift(counter)
+  })
 })

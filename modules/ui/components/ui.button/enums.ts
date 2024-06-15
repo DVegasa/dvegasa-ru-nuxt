@@ -1,10 +1,10 @@
 export enum ButtonTypes {
-    default = 'default',
-    primary = 'primary',
+  default = 'default',
+  primary = 'primary',
 }
 
 export enum ButtonIcon {
-    only = 'only',
-    start = 'start',
-    end = 'end',
+  only = 'only',
+  start = 'start',
+  end = 'end',
 }

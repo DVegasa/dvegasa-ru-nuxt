@@ -1,32 +1,79 @@
 <template>
   <div class="LandingProfile">
     <div class="top">
-      <div class="name">{{$t('landing.profile.name')}}</div>
-      <div class="subtitle">{{$t('landing.profile.subtitle')}}</div>
+      <div class="name">
+        {{ $t('landing.profile.name') }}
+      </div>
+      <div class="subtitle">
+        {{ $t('landing.profile.subtitle') }}
+      </div>
 
-      <NuxtLink to="/cv" :aria-label="$t('landing.profile.ariaCv')" id="link-cv">
-        <ui-button type="primary" role="none" tabindex="-1" aria-labelledby="link-cv">{{$t('landing.profile.cv')}}</ui-button>
+      <NuxtLink
+        id="link-cv"
+        to="/cv"
+        :aria-label="$t('landing.profile.ariaCv')"
+      >
+        <ui-button
+          type="primary"
+          role="none"
+          tabindex="-1"
+          aria-labelledby="link-cv"
+        >
+          {{ $t('landing.profile.cv') }}
+        </ui-button>
       </NuxtLink>
     </div>
 
     <div class="contacts">
-      <div class="contactMe">{{$t('landing.profile.contactMe')}}</div>
+      <div class="contactMe">
+        {{ $t('landing.profile.contactMe') }}
+      </div>
       <div class="contactButtons">
-        <NuxtLink :to="ExternalUrls.telegram" external :aria-label="$t('landing.profile.ariaContactByTelegram')" id="btn-telegram">
-          <ui-button icon="only" role="none" tabindex="-1" aria-labelledby="btn-telegram">
-            <nuxt-icon name="telegram"/>
+        <NuxtLink
+          id="btn-telegram"
+          :to="ExternalUrls.telegram"
+          external
+          :aria-label="$t('landing.profile.ariaContactByTelegram')"
+        >
+          <ui-button
+            icon="only"
+            role="none"
+            tabindex="-1"
+            aria-labelledby="btn-telegram"
+          >
+            <nuxt-icon name="telegram" />
           </ui-button>
         </NuxtLink>
 
-        <NuxtLink :to="ExternalUrls.linkedin" external :aria-label="$t('landing.profile.ariaContactByLinkedin')" id="btn-linkedin">
-          <ui-button icon="only" role="none" tabindex="-1" aria-labelledby="btn-linkedin">
-            <nuxt-icon name="linkedin"/>
+        <NuxtLink
+          id="btn-linkedin"
+          :to="ExternalUrls.linkedin"
+          external
+          :aria-label="$t('landing.profile.ariaContactByLinkedin')"
+        >
+          <ui-button
+            icon="only"
+            role="none"
+            tabindex="-1"
+            aria-labelledby="btn-linkedin"
+          >
+            <nuxt-icon name="linkedin" />
           </ui-button>
         </NuxtLink>
 
-        <NuxtLink :to="ExternalUrls.github" external :aria-label="$t('landing.profile.ariaContactByGithub')" id="btn-github">
-          <ui-button icon="only" role="none" tabindex="-1" aria-labelledby="btn-github">
-            <nuxt-icon name="github"/>
+        <NuxtLink
+          id="btn-github"
+          :to="ExternalUrls.github"
+          external
+          :aria-label="$t('landing.profile.ariaContactByGithub')"
+        >
+          <ui-button
+            icon="only"
+            role="none"
+            tabindex="-1"
+            aria-labelledby="btn-github"
+          >
+            <nuxt-icon name="github" />
           </ui-button>
         </NuxtLink>
       </div>
@@ -34,12 +81,10 @@
   </div>
 </template>
 
-
 <script setup lang="ts">
-import UiButton from "~/modules/ui/components/ui.button/UiButton.vue";
-import {ExternalUrls} from "~/modules/redirects/external-urls";
+import UiButton from '~/modules/ui/components/ui.button/UiButton.vue'
+import { ExternalUrls } from '~/modules/redirects/external-urls'
 </script>
-
 
 <style scoped lang="scss">
 @import '@/assets/styles/responsive';
