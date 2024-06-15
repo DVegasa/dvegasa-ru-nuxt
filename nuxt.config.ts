@@ -2,10 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: [
-      'nuxt-icons',
-      '@nuxtjs/i18n',
-  ],
+  modules: ['nuxt-icons', '@nuxtjs/i18n', '@nuxt/eslint'],
 
   app: {
     head: {
@@ -38,18 +35,24 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap',
-        }
+        },
       ],
 
       htmlAttrs: {
         lang: 'ru',
-      }
-    }
+      },
+    },
   },
 
   css: ['~/assets/styles/index.scss'],
 
   i18n: {
     vueI18n: './modules/i18n/i18n.config.ts',
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
   },
 })
