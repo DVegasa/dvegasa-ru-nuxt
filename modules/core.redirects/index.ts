@@ -10,12 +10,12 @@ export default defineNuxtModule({
       pages.unshift({
         name: 'cv',
         path: '/cv',
-        file: resolver.resolve('pages/PageCv.vue'),
+        file: resolver.resolve('pages/cv/PageCv.vue'),
       });
       pages.unshift({
         name: 'xp',
         path: '/xp',
-        file: resolver.resolve('pages/PageXp.vue'),
+        file: resolver.resolve('pages/xp/PageXp.vue'),
       });
     });
   },

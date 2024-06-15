@@ -4,7 +4,7 @@ import eslint from './eslint';
 import head from './head';
 import css from './css';
 
-export const index = defineNuxtConfig({
+export default defineNuxtConfig({
   devtools: { enabled: true },
 
   ...modules,

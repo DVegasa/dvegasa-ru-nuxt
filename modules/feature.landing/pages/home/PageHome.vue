@@ -12,8 +12,8 @@ import LandingProfile from '~/modules/feature.landing/components/landing.profile
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/index.scss';
-@import '@/assets/styles/responsive';
+@import 'assets/styles/index';
+@import 'assets/styles/responsive';
 
 .LandingPageHome {
   position: relative;
