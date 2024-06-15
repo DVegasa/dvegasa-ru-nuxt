@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ButtonIcon } from '~/modules/ui/components/ui.button/enums'
-import { ButtonTypes } from '~/modules/ui/components/ui.button/enums'
+import type { ButtonIcon } from '~/modules/ui/components/ui.button/enums';
+import { ButtonTypes } from '~/modules/ui/components/ui.button/enums';
 
 const props = defineProps({
   type: {
@@ -17,7 +17,7 @@ const props = defineProps({
     type: String as () => ButtonIcon,
     default: null,
   },
-})
+});
 </script>
 
 <style scoped lang="scss">

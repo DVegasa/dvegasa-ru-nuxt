@@ -14,10 +14,10 @@ const counter = `<!-- Yandex.Metrika counter -->
    });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/97489259" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->`
+<!-- /Yandex.Metrika counter -->`;
 
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('render:html', (html) => {
-    html.head.unshift(counter)
-  })
-})
+    html.head.unshift(counter);
+  });
+});

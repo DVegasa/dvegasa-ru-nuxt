@@ -1,5 +1,5 @@
-import { landing_ru } from '~/modules/landing/i18n/ru'
-import { landing_en } from '~/modules/landing/i18n/en'
+import { landing_ru } from '~/modules/landing/i18n/ru';
+import { landing_en } from '~/modules/landing/i18n/en';
 
 export default defineI18nConfig(() => {
   return ({
@@ -16,5 +16,5 @@ export default defineI18nConfig(() => {
         landing: { ...landing_en },
       },
     },
-  })
-})
+  });
+});

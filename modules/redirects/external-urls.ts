@@ -5,4 +5,4 @@ export const ExternalUrls = {
   telegram: 'https://t.me/dvegasa',
   linkedin: 'https://www.linkedin.com/in/dvegasa/',
   github: 'https://github.com/dvegasa/',
-}
+};

@@ -82,8 +82,8 @@
 </template>
 
 <script setup lang="ts">
-import UiButton from '~/modules/ui/components/ui.button/UiButton.vue'
-import { ExternalUrls } from '~/modules/redirects/external-urls'
+import UiButton from '~/modules/ui/components/ui.button/UiButton.vue';
+import { ExternalUrls } from '~/modules/redirects/external-urls';
 </script>
 
 <style scoped lang="scss">
