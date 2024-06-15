@@ -2,7 +2,19 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['nuxt-icons', '@nuxtjs/i18n', '@nuxt/eslint'],
+  modules: [
+    'nuxt-icons',
+    '@nuxtjs/i18n',
+    '@nuxt/eslint',
+
+    '~/modules/core.i18n',
+    '~/modules/core.redirects',
+    '~/modules/core.yandex-metrica',
+    '~/modules/core.analytics',
+
+    '~/modules/feature.ui',
+    '~/modules/feature.landing',
+  ],
 
   app: {
     head: {
@@ -47,7 +59,7 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/index.scss'],
 
   i18n: {
-    vueI18n: './modules/i18n/i18n.config.ts',
+    vueI18n: './modules/core.i18n/i18n.config.ts',
   },
 
   eslint: {

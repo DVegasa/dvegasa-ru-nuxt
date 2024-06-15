@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { ExternalUrls } from '~/modules/redirects/external-urls';
+import { ExternalUrls } from '~/modules/core.redirects/external-urls';
 
 await navigateTo(ExternalUrls.cv, {
   external: true,

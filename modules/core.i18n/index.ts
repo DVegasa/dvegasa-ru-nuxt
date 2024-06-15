@@ -2,7 +2,7 @@ import { defineNuxtModule } from '@nuxt/kit';
 
 export default defineNuxtModule({
   meta: {
-    name: 'ui',
+    name: 'core.i18n',
   },
   setup() {
   },
