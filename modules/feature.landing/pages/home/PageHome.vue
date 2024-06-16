@@ -4,6 +4,14 @@
       <div class="wrapper">
         <landing-name />
         <landing-contact-me />
+
+        <ui-button
+          type="text"
+          class="switchLang"
+          @click="switchLanguage"
+        >
+          {{ $t('landing.switchLang') }}
+        </ui-button>
       </div>
     </ui-all-screen>
   </div>
@@ -13,6 +21,16 @@
 import UiAllScreen from '~/modules/feature.ui/components/ui.AllScreen/UiAllScreen.vue';
 import LandingName from '~/modules/feature.landing/components/landing.name/LandingName.vue';
 import LandingContactMe from '~/modules/feature.landing/components/landing.contactMe/LandingContactMe.vue';
+import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
+
+const i18n = useI18n();
+function switchLanguage(): void {
+  if (i18n.locale.value === 'ru') {
+    i18n.locale.value = 'en';
+  } else {
+    i18n.locale.value = 'ru';
+  }
+}
 </script>
 
 <style lang="scss">
@@ -52,8 +70,23 @@ import LandingContactMe from '~/modules/feature.landing/components/landing.conta
     }
   }
 
-  .LandingName {
+  .switchLang {
+    position: absolute;
+    top: 40px;
+    right: -60px;
 
+    @include screen-tablet {
+      top: 20px;
+      right: -40px;
+    }
+
+    @include screen-phone {
+      top: 10px;
+      right: -20px;
+
+      font-size: 12px !important;
+    }
   }
+
 }
 </style>

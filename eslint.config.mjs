@@ -23,6 +23,7 @@ export default withNuxt([
       'vue/attribute-hyphenation': ['warn', 'always'],
       '@stylistic/indent': ['error', 2],
       '@stylistic/semi': ['error', 'always'],
+      '@stylistic/brace-style': ['error', '1tbs'],
 
     // TODO: Добавить правила сортировки импортов:
     // 'simple-import-sort/imports'

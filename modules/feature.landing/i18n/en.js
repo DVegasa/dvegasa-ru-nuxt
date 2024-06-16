@@ -1,4 +1,6 @@
 export const landing_en = {
+  switchLang: 'на русском',
+
   profile: {
     name: 'Ed Khalturin',
     subtitle: 'product full-stack developer',

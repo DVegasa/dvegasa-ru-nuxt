@@ -87,6 +87,18 @@ const props = defineProps({
         font-size: 14px;
       }
     }
+
+    &text {
+      color: $color-white;
+      font-size: 14px;
+      letter-spacing: .05em;
+      font-weight: 400;
+      opacity: 0.75;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   &._icon- {
