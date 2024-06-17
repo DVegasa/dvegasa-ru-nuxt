@@ -6,7 +6,7 @@ import css from './css';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
+  experimental: { inlineSSRStyles: false },
   ...modules,
 
   app: {
