@@ -1,5 +1,8 @@
 <template>
   <div class="LandingPageHome">
+    <landing-gradient-green />
+    <landing-gradient-black />
+
     <ui-all-screen>
       <div class="wrapper">
         <landing-name />
@@ -22,6 +25,8 @@ import UiAllScreen from '~/modules/feature.ui/components/ui.AllScreen/UiAllScree
 import LandingName from '~/modules/feature.landing/components/landing.name/LandingName.vue';
 import LandingContactMe from '~/modules/feature.landing/components/landing.contactMe/LandingContactMe.vue';
 import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
+import LandingGradientGreen from '~/modules/feature.landing/components/landing.gradientGreen/LandingGradientGreen.vue';
+import LandingGradientBlack from '~/modules/feature.landing/components/landing.gradientBlack/LandingGradientBlack.vue';
 
 const i18n = useI18n();
 function switchLanguage(): void {
@@ -58,6 +63,7 @@ function switchLanguage(): void {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    z-index: 10;
   }
 
   .LandingContactMe {
@@ -88,5 +94,40 @@ function switchLanguage(): void {
     }
   }
 
+  .LandingGradientGreen {
+    position: absolute;
+    top: -1000px;
+    right: -1300px;
+    bottom: 0;
+    height: 2500px;
+    width: 2500px;
+    transform: rotate(-25deg);
+    padding: 50px;
+
+    @include screen-tablet {
+      right: -1300px;
+      top: -700px;
+      height: 2000px;
+      width: 2000px;
+    }
+
+    @include screen-phone {
+      right: -900px;
+      top: -500px;
+      height: 1500px;
+      width: 1500px;
+      transform: rotate(-75deg);
+    }
+  }
+
+  .LandingGradientBlack {
+    position: absolute;
+    padding: 50px;
+    transform: rotate(25deg);
+    height: 1600px;
+    width: 1600px;
+    top: -800px;
+    left: -900px;
+  }
 }
 </style>
