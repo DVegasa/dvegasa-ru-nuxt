@@ -10,14 +10,14 @@
 
       <NuxtLink
         id="link-cv"
-        to="/cv"
         :aria-label="$t('landing.profile.ariaCv')"
+        to="/cv"
       >
         <ui-button
-          type="primary"
+          aria-labelledby="link-cv"
           role="none"
           tabindex="-1"
-          aria-labelledby="link-cv"
+          type="primary"
         >
           {{ $t('landing.profile.cv') }}
         </ui-button>
@@ -26,21 +26,21 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import 'assets/styles/responsive';
 
 .LandingName {
   .top {
-    text-align: left;
     width: 100%;
+    text-align: left;
 
     .name {
-      font-size: 52px;
       margin-bottom: 0.06em;
+      font-size: 52px;
 
       @include screen-tablet {
         font-size: 46px;
@@ -52,10 +52,10 @@ import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
     }
 
     .subtitle {
-      font-size: 22px;
-      color: rgba(255, 255, 255, 0.75);
-      font-weight: 400;
       margin-bottom: 2.2em;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 22px;
+      font-weight: 400;
 
       @include screen-tablet {
         font-size: 20px;

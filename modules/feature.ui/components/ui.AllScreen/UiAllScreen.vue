@@ -4,13 +4,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 </script>
 
 <style lang="scss">
 .UiAllScreen {
-  min-height: 100vh;
   height: 100vh;
+  min-height: 100vh;
   max-height: 100vh;
   position: relative;
 }

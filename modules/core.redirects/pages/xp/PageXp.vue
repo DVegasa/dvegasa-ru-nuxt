@@ -2,7 +2,7 @@
   <div class="PageXp" />
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { ExternalUrls } from '~/modules/core.redirects/external-urls';
 
 await navigateTo(ExternalUrls.xp, {

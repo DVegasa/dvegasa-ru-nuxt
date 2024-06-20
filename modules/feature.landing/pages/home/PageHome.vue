@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import UiAllScreen from '~/modules/feature.ui/components/ui.AllScreen/UiAllScreen.vue';
 import LandingName from '~/modules/feature.landing/components/landing.name/LandingName.vue';
 import LandingContactMe from '~/modules/feature.landing/components/landing.contactMe/LandingContactMe.vue';
@@ -32,6 +32,7 @@ import LandingGradientGreen from '~/modules/feature.landing/components/landing.g
 import LandingGradientBlack from '~/modules/feature.landing/components/landing.gradientBlack/LandingGradientBlack.vue';
 
 const i18n = useI18n();
+
 function switchLanguage(): void {
   if (i18n.locale.value === 'ru') {
     i18n.locale.value = 'en';
@@ -46,14 +47,14 @@ function switchLanguage(): void {
 @import 'assets/styles/responsive';
 
 .LandingPageHome {
+  height: 100%;
+  position: relative;
+  overflow: clip;
   --padding-bottom: 2em;
+
   --padding-right: 2em;
   --padding-left: 5em;
   --padding-top: 2em;
-
-  position: relative;
-  height: 100%;
-  overflow: clip;
 
   @include screen-tablet {
     --padding-bottom: 2em;
@@ -74,17 +75,17 @@ function switchLanguage(): void {
   }
 
   .wrapper {
+    height: 100%;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    z-index: 10;
   }
 
   .LandingContactMe {
     position: absolute;
-    left: var(--padding-left);
     bottom: var(--padding-bottom);
+    left: var(--padding-left);
   }
 
   .switchLang {
@@ -104,27 +105,27 @@ function switchLanguage(): void {
   }
 
   .LandingGradientGreen {
+    width: 2500px;
+    height: 2500px;
     position: absolute;
     top: -1000px;
     right: -1300px;
     bottom: 0;
-    height: 2500px;
-    width: 2500px;
-    transform: rotate(-25deg);
     padding: 50px;
+    transform: rotate(-25deg);
 
     @include screen-tablet {
-      right: -1300px;
-      top: -700px;
-      height: 2000px;
       width: 2000px;
+      height: 2000px;
+      top: -700px;
+      right: -1300px;
     }
 
     @include screen-phone {
-      right: -950px;
-      top: -500px;
-      height: 1500px;
       width: 1500px;
+      height: 1500px;
+      top: -500px;
+      right: -950px;
       transform: rotate(-55deg);
     }
   }

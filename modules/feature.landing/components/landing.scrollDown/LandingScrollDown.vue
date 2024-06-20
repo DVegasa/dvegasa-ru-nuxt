@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import arrowIcon from './assets/arrow.svg';
 </script>
 
@@ -16,22 +16,22 @@ import arrowIcon from './assets/arrow.svg';
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75em;
   user-select: none;
+  gap: 0.75em;
 
   .arrow {
-    margin-left: 4px;
     height: 50px;
+    margin-left: 4px;
   }
 
   .text {
     opacity: 0.66;
-    text-wrap: nowrap;
-    font-weight: 300;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
     font-size: 13px;
+    font-weight: 300;
+    transform: rotate(180deg);
     letter-spacing: 0.05em;
+    text-wrap: nowrap;
+    writing-mode: vertical-lr;
   }
 }
 </style>

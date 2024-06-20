@@ -6,15 +6,15 @@
     <div class="contactButtons">
       <NuxtLink
         id="btn-telegram"
+        :aria-label="$t('landing.profile.ariaContactByTelegram')"
         :to="ExternalUrls.telegram"
         external
-        :aria-label="$t('landing.profile.ariaContactByTelegram')"
       >
         <ui-button
-          role="none"
-          icon="only"
-          tabindex="-1"
           aria-labelledby="btn-telegram"
+          icon="only"
+          role="none"
+          tabindex="-1"
         >
           <telegram-icon />
         </ui-button>
@@ -22,15 +22,15 @@
 
       <NuxtLink
         id="btn-linkedin"
+        :aria-label="$t('landing.profile.ariaContactByLinkedin')"
         :to="ExternalUrls.linkedin"
         external
-        :aria-label="$t('landing.profile.ariaContactByLinkedin')"
       >
         <ui-button
+          aria-labelledby="btn-linkedin"
           icon="only"
           role="none"
           tabindex="-1"
-          aria-labelledby="btn-linkedin"
         >
           <linkedin-icon />
         </ui-button>
@@ -38,15 +38,15 @@
 
       <NuxtLink
         id="btn-github"
+        :aria-label="$t('landing.profile.ariaContactByGithub')"
         :to="ExternalUrls.github"
         external
-        :aria-label="$t('landing.profile.ariaContactByGithub')"
       >
         <ui-button
+          aria-labelledby="btn-github"
           icon="only"
           role="none"
           tabindex="-1"
-          aria-labelledby="btn-github"
         >
           <github-icon name="github" />
         </ui-button>
@@ -55,7 +55,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import telegramIcon from './assets/telegram.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import githubIcon from './assets/github.svg';
@@ -71,10 +71,10 @@ import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
   flex-direction: column;
 
   .contactMe {
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.75);
     padding-bottom: 1.25em;
+    color: rgba(255, 255, 255, 0.75);
     font-size: 14px;
+    font-weight: 300;
 
     @include screen-tablet {
       font-size: 14px;

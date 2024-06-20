@@ -4,7 +4,7 @@
   </button>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { ButtonIcon } from '~/modules/feature.ui/components/ui.button/enums';
 import { ButtonTypes } from '~/modules/feature.ui/components/ui.button/enums';
 
@@ -20,24 +20,24 @@ const props = defineProps({
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @use 'sass:color';
 @import '@/assets/styles/index.scss';
 
 .UiButton {
-  border: none;
-  background: none;
+  padding: 0.66em 1.2em;
   color: inherit;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
+  transition: all ease-in-out 0.15s;
+  letter-spacing: 0;
 
-  padding: 0.66em 1.2em;
+  border: none;
   border-radius: 3px;
 
-  transition: all ease-in-out 0.15s;
+  outline: inherit;
 
-  letter-spacing: 0;
+  background: none;
 
   & * {
     cursor: pointer;
@@ -49,11 +49,11 @@ const props = defineProps({
 
   &._type- {
     &default {
-      background-color: $color-black;
       color: $color-white;
-
       font-size: 16px;
+
       font-weight: 500;
+      background-color: $color-black;
 
       &:hover {
         background-color: color.scale($color-black, $lightness: 4%);
@@ -69,11 +69,11 @@ const props = defineProps({
     }
 
     &primary {
-      background-color: $color-green;
       color: $color-black;
-
       font-size: 16px;
+
       font-weight: bold;
+      background-color: $color-green;
 
       &:hover {
         background-color: color.scale($color-green, $lightness: -15%);
@@ -89,11 +89,11 @@ const props = defineProps({
     }
 
     &text {
+      opacity: 0.75;
       color: $color-white;
       font-size: 14px;
-      letter-spacing: .05em;
       font-weight: 400;
-      opacity: 0.75;
+      letter-spacing: .05em;
 
       &:hover {
         opacity: 1;
