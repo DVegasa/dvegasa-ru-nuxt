@@ -63,7 +63,7 @@ function switchLanguage(): void {
   }
 
   @include screen-phone {
-    --padding-bottom: 2em;
+    --padding-bottom: 3em;
     --padding-right: 1em;
     --padding-left: 2em;
     --padding-top: 1em;
