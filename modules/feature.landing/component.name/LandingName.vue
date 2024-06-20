@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts" setup>
-import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
+import UiButton from '~/modules/core.ui/component.button/UiButton.vue';
 </script>
 
 <style lang="scss" scoped>

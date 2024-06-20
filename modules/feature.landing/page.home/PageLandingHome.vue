@@ -23,13 +23,13 @@
 </template>
 
 <script lang="ts" setup>
-import UiAllScreen from '~/modules/feature.ui/components/ui.AllScreen/UiAllScreen.vue';
-import LandingName from '~/modules/feature.landing/components/landing.name/LandingName.vue';
-import LandingContactMe from '~/modules/feature.landing/components/landing.contactMe/LandingContactMe.vue';
-import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
-import LandingScrollDown from '~/modules/feature.landing/components/landing.scrollDown/LandingScrollDown.vue';
-import LandingGradientGreen from '~/modules/feature.landing/components/landing.gradientGreen/LandingGradientGreen.vue';
-import LandingGradientBlack from '~/modules/feature.landing/components/landing.gradientBlack/LandingGradientBlack.vue';
+import UiAllScreen from '~/modules/core.ui/component.allScreen/UiAllScreen.vue';
+import LandingName from '~/modules/feature.landing/component.name/LandingName.vue';
+import LandingContactMe from '~/modules/feature.landing/component.contactMe/LandingContactMe.vue';
+import UiButton from '~/modules/core.ui/component.button/UiButton.vue';
+import LandingScrollDown from '~/modules/feature.landing/component.scrollDown/LandingScrollDown.vue';
+import LandingGradientGreen from '~/modules/feature.landing/component.gradientGreen/LandingGradientGreen.vue';
+import LandingGradientBlack from '~/modules/feature.landing/component.gradientBlack/LandingGradientBlack.vue';
 
 const i18n = useI18n();
 

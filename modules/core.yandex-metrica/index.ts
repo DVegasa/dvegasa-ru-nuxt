@@ -6,6 +6,6 @@ export default defineNuxtModule({
   },
   setup() {
     const resolver = createResolver(import.meta.url);
-    addServerPlugin(resolver.resolve('./plugins/yandex-metrica-injection/yandex-metrica-injection.ts'));
+    addServerPlugin(resolver.resolve('./plugin.yandex-metrica-injection/yandex-metrica-injection.ts'));
   },
 });

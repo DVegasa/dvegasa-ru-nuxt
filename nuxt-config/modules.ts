@@ -8,8 +8,8 @@ export default {
     '~/modules/core.redirects',
     '~/modules/core.yandex-metrica',
     '~/modules/core.analytics',
+    '~/modules/core.ui',
 
-    '~/modules/feature.ui',
     '~/modules/feature.landing',
   ],
 };

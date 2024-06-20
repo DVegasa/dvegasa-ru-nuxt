@@ -60,7 +60,7 @@ import telegramIcon from './assets/telegram.svg';
 import linkedinIcon from './assets/linkedin.svg';
 import githubIcon from './assets/github.svg';
 import { ExternalUrls } from '~/modules/core.redirects/external-urls';
-import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
+import UiButton from '~/modules/core.ui/component.button/UiButton.vue';
 </script>
 
 <style lang="scss">

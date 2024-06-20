@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import type { ButtonIcon } from '~/modules/feature.ui/components/ui.button/enums';
-import { ButtonTypes } from '~/modules/feature.ui/components/ui.button/enums';
+import type { ButtonIcon } from '~/modules/core.ui/component.button/enums';
+import { ButtonTypes } from '~/modules/core.ui/component.button/enums';
 
 const props = defineProps({
   type: {
@@ -22,7 +22,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 @use 'sass:color';
-@import '@/assets/styles/index.scss';
+@import 'assets/styles/index';
 
 .UiButton {
   padding: 0.66em 1.2em;

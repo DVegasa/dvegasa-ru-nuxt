@@ -10,7 +10,7 @@ export default defineNuxtModule({
       pages.unshift({
         name: 'home',
         path: '/',
-        file: resolver.resolve('pages/home/PageHome.vue'),
+        file: resolver.resolve('page.home/PageLandingHome.vue'),
       });
     });
   },
