@@ -11,8 +11,8 @@
         :aria-label="$t('landing.profile.ariaContactByTelegram')"
       >
         <ui-button
-          icon="only"
           role="none"
+          icon="only"
           tabindex="-1"
           aria-labelledby="btn-telegram"
         >

@@ -10,8 +10,8 @@
       </div>
 
       <ui-button
-        type="text"
         class="switchLang"
+        type="text"
         @click="switchLanguage"
       >
         {{ $t('landing.switchLang') }}
