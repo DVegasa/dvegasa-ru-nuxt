@@ -11,4 +11,8 @@ export const landing_en = {
     ariaContactByLinkedin: 'contact by linkedin',
     ariaContactByGithub: 'contact by github',
   },
+
+  scrollDown: {
+    scrollDown: 'scroll down',
+  },
 };

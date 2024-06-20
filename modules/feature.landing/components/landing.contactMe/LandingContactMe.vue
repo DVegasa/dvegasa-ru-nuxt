@@ -16,7 +16,7 @@
           tabindex="-1"
           aria-labelledby="btn-telegram"
         >
-          <nuxt-icon name="telegram" />
+          <telegram-icon />
         </ui-button>
       </NuxtLink>
 
@@ -32,7 +32,7 @@
           tabindex="-1"
           aria-labelledby="btn-linkedin"
         >
-          <nuxt-icon name="linkedin" />
+          <linkedin-icon />
         </ui-button>
       </NuxtLink>
 
@@ -48,7 +48,7 @@
           tabindex="-1"
           aria-labelledby="btn-github"
         >
-          <nuxt-icon name="github" />
+          <github-icon name="github" />
         </ui-button>
       </NuxtLink>
     </div>
@@ -56,6 +56,9 @@
 </template>
 
 <script setup lang="ts">
+import telegramIcon from './assets/telegram.svg';
+import linkedinIcon from './assets/linkedin.svg';
+import githubIcon from './assets/github.svg';
 import { ExternalUrls } from '~/modules/core.redirects/external-urls';
 import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
 </script>

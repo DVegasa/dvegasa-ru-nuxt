@@ -1,8 +1,8 @@
 export default {
   modules: [
-    'nuxt-icons',
     '@nuxtjs/i18n',
     '@nuxt/eslint',
+    'nuxt-svgo',
 
     '~/modules/core.i18n',
     '~/modules/core.redirects',

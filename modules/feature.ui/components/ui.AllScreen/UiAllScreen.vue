@@ -13,10 +13,5 @@
   height: 100vh;
   max-height: 100vh;
   position: relative;
-
-  > * {
-    height: 100vh;
-    width: 100%;
-  }
 }
 </style>

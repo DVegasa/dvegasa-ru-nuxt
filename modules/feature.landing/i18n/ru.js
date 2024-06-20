@@ -11,4 +11,8 @@ export const landing_ru = {
     ariaContactByLinkedin: 'связаться по linkedin',
     ariaContactByGithub: 'связаться по github',
   },
+
+  scrollDown: {
+    scrollDown: 'листай вниз',
+  },
 };

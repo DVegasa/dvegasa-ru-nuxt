@@ -1,21 +1,20 @@
 <template>
   <div class="LandingPageHome">
-    <landing-gradient-green />
-    <landing-gradient-black />
-
     <ui-all-screen>
       <div class="wrapper">
         <landing-name />
         <landing-contact-me />
-
-        <ui-button
-          type="text"
-          class="switchLang"
-          @click="switchLanguage"
-        >
-          {{ $t('landing.switchLang') }}
-        </ui-button>
       </div>
+
+      <ui-button
+        type="text"
+        class="switchLang"
+        @click="switchLanguage"
+      >
+        {{ $t('landing.switchLang') }}
+      </ui-button>
+
+      <landing-scroll-down />
     </ui-all-screen>
   </div>
 </template>
@@ -25,8 +24,7 @@ import UiAllScreen from '~/modules/feature.ui/components/ui.AllScreen/UiAllScree
 import LandingName from '~/modules/feature.landing/components/landing.name/LandingName.vue';
 import LandingContactMe from '~/modules/feature.landing/components/landing.contactMe/LandingContactMe.vue';
 import UiButton from '~/modules/feature.ui/components/ui.button/UiButton.vue';
-import LandingGradientGreen from '~/modules/feature.landing/components/landing.gradientGreen/LandingGradientGreen.vue';
-import LandingGradientBlack from '~/modules/feature.landing/components/landing.gradientBlack/LandingGradientBlack.vue';
+import LandingScrollDown from '~/modules/feature.landing/components/landing.scrollDown/LandingScrollDown.vue';
 
 const i18n = useI18n();
 function switchLanguage(): void {
@@ -43,19 +41,30 @@ function switchLanguage(): void {
 @import 'assets/styles/responsive';
 
 .LandingPageHome {
+  --padding-bottom: 2em;
+  --padding-right: 2em;
+  --padding-left: 5em;
+  --padding-top: 2em;
+
   position: relative;
-  padding-left: 100px;
-  padding-right: 100px;
   height: 100%;
 
   @include screen-tablet {
-    padding-left: 50px;
-    padding-right: 50px;
+    --padding-bottom: 2em;
+    --padding-right: 2em;
+    --padding-left: 3em;
+    --padding-top: 2em;
   }
 
   @include screen-phone {
-    padding-left: 20px;
-    padding-right: 20px;
+    --padding-bottom: 2em;
+    --padding-right: 1em;
+    --padding-left: 2em;
+    --padding-top: 1em;
+  }
+
+  .UiAllScreen {
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
   }
 
   .wrapper {
@@ -68,66 +77,24 @@ function switchLanguage(): void {
 
   .LandingContactMe {
     position: absolute;
-    left: 0;
-    bottom: 2em;
-
-    @include screen-phone {
-      padding-bottom: 10px;
-    }
+    left: var(--padding-left);
+    bottom: var(--padding-bottom);
   }
 
   .switchLang {
     position: absolute;
-    top: 40px;
-    right: -60px;
-
-    @include screen-tablet {
-      top: 20px;
-      right: -40px;
-    }
+    top: var(--padding-top);
+    right: var(--padding-right);
 
     @include screen-phone {
-      top: 10px;
-      right: -20px;
-
       font-size: 12px !important;
     }
   }
 
-  .LandingGradientGreen {
+  .LandingScrollDown {
     position: absolute;
-    top: -1000px;
-    right: -1300px;
-    bottom: 0;
-    height: 2500px;
-    width: 2500px;
-    transform: rotate(-25deg);
-    padding: 50px;
-
-    @include screen-tablet {
-      right: -1300px;
-      top: -700px;
-      height: 2000px;
-      width: 2000px;
-    }
-
-    @include screen-phone {
-      right: -900px;
-      top: -500px;
-      height: 1500px;
-      width: 1500px;
-      transform: rotate(-75deg);
-    }
-  }
-
-  .LandingGradientBlack {
-    position: absolute;
-    padding: 50px;
-    transform: rotate(25deg);
-    height: 1600px;
-    width: 1600px;
-    top: -800px;
-    left: -900px;
+    right: calc(var(--padding-right) + 10px);
+    bottom: var(--padding-bottom);
   }
 }
 </style>
