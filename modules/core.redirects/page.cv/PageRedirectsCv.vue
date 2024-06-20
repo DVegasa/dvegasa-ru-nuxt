@@ -10,7 +10,7 @@ await navigateTo(ExternalUrls.cv, {
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .PageCv {
 
 }

@@ -6,7 +6,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .LandingGradientBlack {
   background: rgb(0, 237, 95);
   background: radial-gradient(ellipse 45% 35%, rgb(0, 0, 0, 0.65) 0%, rgba(12, 12, 12, 0) 100%);

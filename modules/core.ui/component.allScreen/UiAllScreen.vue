@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .UiAllScreen {
   height: 100vh;
   min-height: 100vh;

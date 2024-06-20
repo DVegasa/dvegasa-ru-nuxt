@@ -42,7 +42,7 @@ function switchLanguage(): void {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import 'assets/styles/index';
 @import 'assets/styles/responsive';
 

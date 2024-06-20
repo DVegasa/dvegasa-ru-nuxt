@@ -11,7 +11,7 @@
 import arrowIcon from './assets/arrow.svg';
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .LandingScrollDown {
   display: inline-flex;
   flex-direction: column;

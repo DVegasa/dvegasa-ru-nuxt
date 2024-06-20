@@ -63,7 +63,7 @@ import { ExternalUrls } from '~/modules/core.redirects/external-urls';
 import UiButton from '~/modules/core.ui/component.button/UiButton.vue';
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import 'assets/styles/responsive';
 
 .LandingContactMe {
